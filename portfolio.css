@@ -1,0 +1,381 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    font-family: sans-serif;
+}
+
+/*esto modifica el cuerpo completo*/
+
+#principal{
+    background-color: white;
+    color: black;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    padding: 30px;
+}
+
+.menu{
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+    position: fixed;
+}
+
+.menu a{
+    color: black;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.menu a:hover{
+    background-color: blueviolet;
+    margin: 10px;
+    transition: ease-in .2s;
+    height: 100px;
+    width: 100px;
+}
+
+.menu li{
+    list-style: none;
+}
+
+.menu .activo{
+    background-color: blueviolet;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/* aca termina modificacion nav bar*/
+
+.presentacion{
+    position: relative;
+
+}
+
+.principal-seccion{
+    margin-top: 100px;
+    background-color: black;
+    padding: 250px;
+    
+}
+
+.presentacion-escrito{
+    display: flex;
+    position: absolute;
+    top: 3px;
+}
+
+.titulo-1{
+    font-size: 30px;
+    color: white;
+}
+
+.titulo-2{
+    font-size: 50px;
+    color: blueviolet;
+}
+
+.titulo-3{
+    font-size: 10x;
+    color: white;
+}
+
+.boton{
+    background-color: blueviolet;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    width: 150px;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 220px;
+}
+
+
+.imagen-hero{
+    display: flex;
+    height: 700px;
+    width: 700px;
+    position: absolute;
+    left: 700px;
+    top: 200px;
+    padding: 50px;
+    box-shadow: 100px;
+    
+}
+
+/*aca termina seccion de presentacion*/
+
+#conocimientos{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    padding: 250px;
+}
+
+.titulo-conocimientos{
+    font-family: verdana;
+    font-size: 30px;
+    color: black;
+}
+
+.titulo-conocimientos:hover{
+    color: blueviolet;
+    transition: ease-in .1s;
+}
+
+.parrafo-conocimientos{
+    font-family: verdana;
+    font-size; 15px;
+}
+.contenedor-botones{
+    display: flex;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    padding: 40px;
+    text-align: center;
+    justify-content: center;
+}
+
+.boton-html{
+    width: 190px;
+    height: 190px;
+    margin: 50px 50px 50px 50px;
+    border: 2px solid grey;
+}
+
+.boton-html:hover{
+    background-color: black;
+    color: orange;
+    margin: 100px;
+    transition: ease-in .2s;
+}
+
+.boton-css{
+    width: 190px;
+    height: 190px;
+    margin: 50px 50px 50px 50px;
+    border: 2px solid grey;
+}
+
+.boton-css:hover{
+    background-color: black;
+    color: dodgerblue;
+    margin: 100px;
+    transition: ease-in .2s;
+}
+
+.html{
+    color: orange;
+    font-size: 100px;
+}
+
+.css{
+    color: dodgerblue;
+    font-size: 100px;
+}
+
+/* aca termina conocimientos */
+
+#cita{
+    display: flex;
+    background-color: blueviolet;
+    padding: 250px;
+    position: relative;
+}
+
+.icono-cita{
+    font-size: 70px;
+    position: absolute;
+    top: 8px;
+}
+
+.parrafo-cita{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+}
+
+.fin-cita{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    position: absolute;
+    bottom: 8px;
+}
+
+/* aca termina cita*/
+
+#proyectos{
+    display: flex;
+    padding: 300px;
+    flex-direction: column;
+    position: relative;
+}
+
+.titulo-proyectos{
+    position: absolute;
+    font-family: verdana;
+    color: black;
+    text-align: center;
+    font-size: 30px;
+    top: 30px;
+    left: 500px;
+}
+
+.parrafo-proyectos{
+    position: absolute;
+    font-family: verdana;
+    color: black;
+    font-size: 15px;
+    justify-content: center;
+    top: 150px;
+}
+
+.proyecto-portfolio iframe{
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    right: 350px;
+    top: 100px;
+}
+
+/*aca se termina proyectos*/
+
+#redesyformulario{
+    padding: 200px;
+    margin: 10px;
+    background-color: black;
+    color: white;
+}
+
+.redes-formulario{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.titulo-redes h1{
+    font-family: Cambria;
+    font-size: 30px;
+    margin: 10px;
+}
+
+.titulo-redes i{
+    font-size: 40px;
+    margin: 10px;
+}
+
+.parrafo-redes p{
+    margin: 10px;
+}
+
+.titulo-redes i:hover{
+    background-color: white;
+    transition: ease-in .1s;
+    border-radius: 5px solid blueviolet;
+}
+
+.Escribime{
+    margin-top: 30px;
+    margin-right: 10px;
+}
+
+.formulario{
+    font-family: verdana;
+    font-size: bold;
+    line-height: 50px;
+}
+
+/*aca se termina redes y formulario*/
+
+.repeticion-navbar{
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+
+/*aca termina final*/
+
+.repeticion-redes{
+    display: flex;
+    flex-direction: row;
+    padding: 50px;
+    font-size: 30px;
+    justify-content: space-around;
+}
+
+.repeticion-redes i:hover{
+    background-color: black;
+    transition: ease-in .1s;
+    border-radius: 5px solid blueviolet;
+}
+
+/* aca termina repeticion de redes*/
+
+.final-proyecto{
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.final-proyecto i{
+    color: red;
+}
+
+
+@media (max-width: 1100px) {
+    header {
+        display: none;
+    }
+
+    .presentacion{
+        display: block;
+    }
+
+    .presentacion-escrita{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .presentacion-escrita div {
+        text-align: center;
+        width: 100%;
+    }
+
+    .imagen-hero {
+        width: 100%;
+    }
+
+    .imagen-hero iframe{
+        width: 100%;
+    }
+}
+
+@media (max-width: 900px) {
+
+}
+
+@media (max-width: 600px) {
+
+}
+
+@media (max-width: 500px) {
+
+}
+
+@media (max-width: 320px) {
+
+}
