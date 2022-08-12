@@ -5,6 +5,7 @@
 }
 
 body{
+    margin: 0;
     width: 100%;
     height: 100%;
     font-family: sans-serif;
@@ -127,7 +128,7 @@ nav {
 }
 
 .titulo-conocimientos{
-    font-family: verdana;
+    font-family: 'Teko', sans-serif;
     font-size: 30px;
     color: black;
 }
@@ -202,35 +203,46 @@ nav {
     font-size: 70px;
     position: absolute;
     top: 8px;
+    right: 650px;
 }
 
 .parrafo-cita{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+    font-family: 'Teko', sans-serif;
+    font-size: 50px;
+    position: absolute;
+    left: 300px;
 }
 
 .fin-cita{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Teko', sans-serif;
     position: absolute;
     bottom: 8px;
+    right: 650px;
+    font-size: 18px;
 }
 
 /* aca termina cita*/
 
 #proyectos{
     display: flex;
-    padding: 300px;
+    padding: 350px;
     flex-direction: column;
     position: relative;
 }
 
 .titulo-proyectos{
     position: absolute;
-    font-family: verdana;
+    font-family: 'Teko', sans-serif;
     color: black;
     text-align: center;
     font-size: 30px;
-    top: 30px;
+    top: 80px;
     left: 500px;
+}
+
+.titulo-proyectos:hover {
+    color: blueviolet;
+    transition: ease-in .1s;
 }
 
 .parrafo-proyectos{
@@ -238,23 +250,45 @@ nav {
     font-family: verdana;
     color: black;
     font-size: 15px;
-    justify-content: center;
-    top: 150px;
+    align-items: center;
+    top: 200px;
+    left: 150px;
 }
 
-.proyecto-portfolio iframe{
-    position: absolute;
-    width: 600px;
-    height: 600px;
-    right: 350px;
-    top: 100px;
+.proyecto-portfolio{
+    display: flex;
+    border-radius: 5px;
+    text-align: center;
+    justify-content: center;
 }
+
+.imagen-portfolio{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 250px;
+    height: 250px;
+    left: 500px;
+    
+}
+
+.contenedor-imagen:hover {
+    color: blueviolet;
+    transition: ease-in .1s;
+}
+
+.contenedor-imagen h3{
+    display: flex;
+    position: absolute;
+    bottom: 10px;
+    left: 580px;
+}
+
 
 /*aca se termina proyectos*/
 
 #redesyformulario{
     padding: 200px;
-    margin: 10px;
     background-color: black;
     color: white;
 }
@@ -343,6 +377,8 @@ nav {
 
     .presentacion{
         display: block;
+        padding: 100px;
+        margin-left: 0;
     }
 
     .presentacion-escrita{
@@ -350,32 +386,53 @@ nav {
         align-items: center;
     }
 
+    .principal-seccion .boton{
+        margin: 0px;
+    }
+
     .presentacion-escrita div {
         text-align: center;
         width: 100%;
     }
 
-    .imagen-hero {
-        width: 100%;
+    .imagen-hero{
+        display: none;
     }
 
-    .imagen-hero iframe{
-        width: 100%;
+    .parrafo-cita p{
+        margin-left: 0;
+    }
+
+    .icono-cita i{
+        margin-left: 300%;
+    }
+
+    .fin-cita h1{
+        margin-left: 200%;
     }
 }
 
 @media (max-width: 900px) {
+    
+    .icono-cita i{
+        margin-left: 400%;
+    }
 
-}
+    .parrafo-cita p{
+        align-items: center;
+        margin-bottom: 300%;
+    }
 
-@media (max-width: 600px) {
+    .fin-cita h1{
+        margin-left: 300%;
+    }
 
-}
+    .titulo-proyectos h1{
+       justify-items: center;
+       margin-right: 200%;
+    }
 
-@media (max-width: 500px) {
-
-}
-
-@media (max-width: 320px) {
-
+    .imagen-portfolio img{
+        margin-right: 100%;
+    }
 }
